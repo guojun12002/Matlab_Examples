@@ -1,0 +1,251 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Texte de bulles Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.TextedebullesCar
+	{mso-style-name:"Texte de bulles Car";
+	mso-style-link:"Texte de bulles";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=FR-CA>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US
+style='font-size:18.0pt;line-height:115%'>Hybrid emergency power system for
+more electrical aircraft:</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><i>Martin Gendrin
+(ETS), Jean-François Doyon (Cima+), François Pelletier (Bombardier Aeronautics),
+Louis A. Dessaint (ETS)</i></p>
+
+<p class=MsoNormal><b><span lang=EN-US>Description: </span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US>This demo
+presents a model of simulation of a RAT (Ram Air Turbine) system used as
+emergency power system in more electrical aircraft.  It illustrates the use of
+the Simscape libraries to simulate a system composed of electrical, mechanical
+and hydraulic components. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US>The power system
+is composed from a wind turbine connected to an electrical synchronous
+generator. Its speed and voltage are regulated to 400Hz and 110V to fit with
+the airplane electrical main AC bus, and it supplies active loads up to 3500W. The
+shaft of the Turbine is also connected to a pump that supplies a hydraulic
+circuit linked through a servo valve to a cylinder. The motion of the rod is
+transformed into rotational movement on the axis of the Aileron. The angle controller
+makes sure that the deflection angle tracks a given reference by controlling
+the servo valve. </span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=541
+height=195 id="Image 2" src="blablabla_fichiers/image001.png"></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US>Functional
+representation of the complete system</span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US>This model
+contains: </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>A wind turbine of 15kW with a base wind speed of
+145 knots. A PD regulator acting on the pitch angle enables the control of the
+turbine speed necessary to regulate the electrical frequency of the synchronous
+generator to 400Hz. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>A synchronous generator of 15kVA with a nominal
+voltage of 110Vrms and a nominal frequency of 400Hz. A PI regulator enables the
+control of the voltage value to 110Vrms by regulating the filed voltage. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>An assembly of multiple electrical loads for a
+total of 3500W that is connected at the generator electrical ports. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>A variable displacement pressure compensated
+pump, which permits to maintain a preset output pressure of 1150 psi by
+adjusting the output flow.  The pump nominal characteristics are a pressure of
+3000 psi and an angular velocity of 8000 rpm. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>A servo valve controlled by a PD regulator fed
+from the angle error. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>A double acting hydraulic cylinder with an
+active area of 10cm² and a piston stroke of 30cm. </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>A model of the aileron, which is a complex
+assembly composed of SimMechanics blocks.  </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US>In this
+simulation, the physical parts are discretized at a fixed sample time Ts=25us.
+The solver for the control parts is set at ode23tb, with a tolerance of 1e-4
+and a maximal step of 50us. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>The wind turbine power characteristics are
+available in the dedicated block, and are given in the plot bellow: </span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=315
+height=250 id="Image 1" src="blablabla_fichiers/image002.png"></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US>Wind
+turbine characteristics </span></b></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US>Demonstration: </span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-align:justify;
+text-indent:-18.0pt'><span lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Run the <i>aircraftRamAirTurbineAssembly_MultiDomain</i>
+model for 6 sec. The following events will occur (cf Scopes): </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify'><i><span
+lang=EN-US>Note: The selection of the accelerator mode decreases strongly the
+simulation duration. </span></i></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify'><span
+lang=EN-US>  </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>At t=0, the wind turbine delivers his nominal torque
+and speed. The pump pressure is set initially to 1050 psi. The electrical
+signals as well as the rest of the hydraulic and mechanical signals are set to
+zero. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>From t=0 to t=1s, the voltage controller will
+fully act to permit the establishment of the voltage rms value to 110Vrms,
+setting at the same time the electrical power produced from the synchronous
+generator. The deflection angle controller regulates the aileron at his zero
+position. The pump pressure increases rapidly to his preset value 1150 psi, and
+then the output flow of the pump will slowly increase to regulate the pressure
+at a constant value.  The speed controller works to keep the generator speed at
+the nominal value 8000rpm. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>At t=1s, a positive reference of 10</span><span
+lang=EN-US>&#8304;</span><span lang=EN-US> is set on the deflection angle
+regulator. As a result, the controller opens the servo-valve to deliver the
+necessary flow to the cylinder and then slowly closes it to enable a smooth
+tracking of the reference. At the same time, the loss of pressure due to the
+valve opening is compensated by the pump displacement. The total flow results
+from the flow necessary to the aileron motion and the one that compensate the
+pressure loss. The evolution of the pump power is fully absorbed by the wind
+turbine, and has no repercussions on the quality of the electrical power. The
+aileron controller achieves a good tracking of the reference in 650ms. </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>At t=3s, a negative reference of -15</span><span
+lang=EN-US>&#8304;</span><span lang=EN-US> is set on the deflection angle
+regulator. The system reacts similarly as in the last point. The valve is
+forced to motion in the other direction, the flow and pressure show the same
+curves but with greater amplitude. The impact on the electrical power can be
+neglected. The tracking of the reference is done in 1sec and is as accurate as
+before. </span></p>
+
+</div>
+
+</body>
+
+</html>

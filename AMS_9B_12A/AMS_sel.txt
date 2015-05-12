@@ -1,0 +1,59 @@
+Analog / Mixed Signal Examples
+
+RF Toolbox Examples
+     Bandpass Filter Design                                                             $ cd \ams\rf_ckts; edit BPF_88_108;                                                            
+     Crystal Filter Design                                                              $ cd \ams\rf_ckts\xtal_filter_design; edit xtal_filter_1;                                                                
+     Impedance Matching with Smith Chart L section                                      $ cd \ams\rf_ckts; edit smith_1;      
+     Impedance Matching with Smith Chart PI section                                     $ cd \ams\rf_ckts; edit smith_2;      
+     Impedance Matching with Smith Chart Tapped C section                               $ cd \ams\rf_ckts; edit smith_4;      
+
+RF Blockset Examples
+     Touchstone Data File 2 Port Passive                                                 $ cd \ams\RFblockset; sparam_filter_rab;
+     S parameter amplifier (AMP fmt)                                                     $ cd \ams\RFblockset; sparam_amp_rab;
+     Transmission Line Bandstop Filters                                                  $ cd \ams\RFblockset; txline_filter_rab;
+     Mathematical Filters                                                                $ cd \ams\RFblockset; math_filter_rab;
+     Ladder Filters                                                                      $ cd \ams\RFblockset; ladder_filter_rab;
+     Cascaded System                                                                     $ cd \ams\RFblockset; cascaded_system_rab;
+     Cascaded Filter                                                                     $ cd \ams\RFblockset; cascaded_filter_rab;
+  
+Behavioral Models of ADCs
+     Sampling 101                                                                      $ cd \ams\sampling\; sampling_101;
+     ADC with Impairments                                                              $ cd \ams\adc\; adc_with_impairments;
+     Interleaved ADC with Impairments                                                  $ cd \ams\adc\; adc_with_impairments_2;
+     Thermocouple ADC                                                                  $ cd \ams\adc\thermocouple_adc; edit thermo_couple_1; tc_4;                                      
+     Sigma-Delta ADC 1st order modulator                                               $ cd \ams\adc\; dspsdadc2;      drawnow; set_param(bdroot,'SimulationCommand','update');                                                       
+     Sigma-Delta ADC 2nd order modulator                                               $ cd \ams\adc\; dspsdadc3;      drawnow; set_param(bdroot,'SimulationCommand','update');                                                   
+     Sigma-Delta ADC 2nd order modulator discrete time (aka switched capacitor)        $ cd \ams\adc\; dspsdadc4;      drawnow; set_param(bdroot,'SimulationCommand','update');                                                                 
+     Sigma-Delta ADC 3rd order modulator with SNR Measurement                          $ cd \ams\adc\; Mod3_4;    drawnow; set_param(bdroot,'SimulationCommand','update');                                                                
+     Sigma-Delta ADC 4th order modulator with SNR Measurement                          $ cd \ams\adc\; Mod4_1;    drawnow; set_param(bdroot,'SimulationCommand','update');
+
+  
+ 
+Behavioral RF
+     Measurement of Lowpass Filter Freq Response                                       $ cd \ams\lc_passive\; rf_bb_1
+     Measurement of Bandpass Filter Freq Response                                      $ cd \ams\lc_passive\; rf_bp_1
+     Non Linear PA                                                                     $ cd \ams\rf_amps; non_linear_PA;      drawnow; set_param(bdroot,'SimulationCommand','update');                  
+     Feed Forward RF PA                                                                $ cd \ams\rf_amps; feed_fwd_2; drawnow; set_param(bdroot,'SimulationCommand','update');
+     Direct Conversion Tx/Rx                                                           $ cd \ams\Direct_Conversion; dc_2; drawnow; set_param(bdroot,'SimulationCommand','update');
+   
+PLLs/Dll/Clock Recovery 
+     VCO with 1/f phase noise                                                          $ cd \ams\pll\phase_noise; vco_phase_noise;
+     VCO with User Defined phase noise                                                 $ cd \ams\pll\phase_noise; vco_phase_noise_3;
+
+     Pll  "simple x8" (chaos)                                                          $ cd \ams\pll; simple_pll_3;
+     Pll  with freq domain instruments                                                 $ cd \ams\pll; pll_d1;
+     Pll  fractional with analog compensation                                          $ cd \ams\pll; fractional_4;
+     Pll  fractional with digital compensation # 1                                 $ cd \ams\pll; fractional_6; drawnow; set_param(bdroot,'SimulationCommand','update');
+     Pll  fractional with digital compensation # 2                                     $ cd \ams\pll; pll_wbsd_2; drawnow; set_param(bdroot,'SimulationCommand','update');
+     
+     Pll  Clock Recovery                                                               $ cd \ams\sync; clock_recovery_3; drawnow; set_param(bdroot,'SimulationCommand','update');
+     Pll  Clock Recovery  with Backplane Channel                                       $ cd \ams\sync; clock_recovery_4; drawnow; set_param(bdroot,'SimulationCommand','update');
+     Freq Multiplying Delay Lock Loop                                                  $ cd \ams\sync; MDLL_rab_1;  drawnow; set_param(bdroot,'SimulationCommand','update');                                             
+
+
+Circuit Level with SimPowerSystems Elements 
+     Analog LC Filter Synthesis and Verification                                       $ cd \ams\lc_passive\;lc_filt_2; 
+     Selected SimPower Elements & Circuit Demos (Demo Navigator)                       $ cd \ams\circuit_level\; simpower_extensions_1;  
+
+Edit AMS_sel.txt                                                                       $ cd \ams; edit AMS_sel.txt
+

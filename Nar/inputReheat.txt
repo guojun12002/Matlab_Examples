@@ -1,0 +1,7 @@
+State	Element		Pressure(kPa)	Temperature(o^C)	Quality(x)	Efficiency	Workoutput(kW)
+1	Turbine1	8000		480			-		0.85		100000
+2	Reheat		700		-			-		-		-	
+3	Turbine2	-		440			-		0.85		-
+4	Condenser	-		-			-		-		-
+5	Pump		8		-			-		0.85		-
+6	Boiler		-		-			-		-		-
